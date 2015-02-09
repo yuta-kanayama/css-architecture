@@ -1,8 +1,11 @@
-# CSS設計2015のサンプルファイル
+# CSS設計 Sample
+
+[demo site](http://css-architecture.yuta-k.net/)
 
 
 ## BEM + Sass( Mixin )
 
+```
 //Element
 @mixin e($name) {
   @at-root &__#{$name} {
@@ -16,4 +19,4 @@
     @content;
   }
 }
-
+```
