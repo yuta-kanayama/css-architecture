@@ -13,31 +13,25 @@
 ## .table-1
 */
 
-.table-1__th,
-.table-1__td {
-  
-}
-
-.table-1__th {
-  
-}
-
-.table-1__td {
-  
-}
-
-.table-1__tr {
-  
-}
-
-.table-1__tbody {
-  
-}
-
-.table-1__caption {
-  
-}
-
 .table-1 {
   
+  @include e( caption ) {
+    
+  }
+  
+  @include e( tbody ) {
+    
+  }
+  
+  @include e( tr ) {
+    
+  }
+  
+  @include e( th ) {
+    
+  }
+  
+  @include e( td ) {
+    
+  }
 }

@@ -1,11 +1,12 @@
 /*
-# 共通 / Common
+# Utility
 */
 
 @import "compass",
         "tool/font-size/ptp-14",
-        "tool/mixin",
         "tool/function",
+        "tool/mixin",
+        "tool/extend",
         "tool/site-setting";
 
 @import "utility/width",

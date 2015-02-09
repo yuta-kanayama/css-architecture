@@ -6,6 +6,7 @@
         "tool/font-size/ptp-14",
         "tool/site-setting",
         "tool/mixin",
+        "tool/extend",
         "tool/function";
 
 
@@ -21,8 +22,9 @@
 ## Base
 */
 
-@import "compass/reset",
-        "base/foundation",
+//@import "compass/reset",
+@import "normalize";
+@import "base/foundation",
         "base/javascript";
 
 
@@ -34,15 +36,19 @@
 @import "module/border",
         "module/breadcrumbs",
         "module/button",
-        "module/form",
         "module/footer",
+        "module/gnav",
         "module/header",
         "module/icon",
+        "module/input",
         "module/list",
         "module/navigation",
+        "module/ol",
         "module/paragraphs",
         "module/section",
-        "module/table";
+        "module/table",
+        "module/textarea",
+        "module/ul";
 
 
 

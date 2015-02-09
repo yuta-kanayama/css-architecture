@@ -3,14 +3,8 @@
 */
 
 
-
 /*
-## Numbers
-*/
-
-
-/*
-### .l-footer-2
+## .l-footer-2
 */
 
 .l-footer-2 {
@@ -19,14 +13,20 @@
 
 
 /*
-### .l-footer-1
+## .l-footer-1
 */
 
-.l-footer-1__copyright {
-  
-}
-
 .l-footer-1 {
+  padding: 20px;
+  color: #fff;
+  background-color: #333;
   
+  a {
+    color: #fff;
+  }
+  
+  @include e( copyright ) {
+    text-align: center;
+  }
 }
 

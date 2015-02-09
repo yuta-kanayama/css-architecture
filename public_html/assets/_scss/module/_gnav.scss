@@ -1,0 +1,28 @@
+/*
+# Global Navigation
+*/
+
+
+/*
+## .gnav-1
+*/
+
+.gnav-1 {
+  position: relative;
+  
+  @include e( items ) {
+    padding: 0;
+    list-style: none;
+    @include legacy-pie-clearfix;
+  }
+  
+  @include e( item ) {
+    float: left;
+  }
+  
+  @include e( link ) {
+    display: block;
+    padding: 10px;
+  }
+}
+

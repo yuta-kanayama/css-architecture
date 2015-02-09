@@ -3,59 +3,21 @@
 */
 
 
-
-/*
-## Numbers
-*/
-
-
 /*
 ### .list-1
 */
 
-.list-1__item {
-  
-}
-
 .list-1 {
   
-}
-
-
-
-/*
-## Unorder List : Numbers
-*/
-
-
-/*
-### .ul-1
-*/
-
-.ul-1__item {
+  @include e( item ) {
+    
+  }
   
-}
-
-.ul-1 {
-  
-}
-
-
-
-/*
-## Order List : Numbers
-*/
-
-
-/*
-### .ol-1
-*/
-
-.ol-1__item {
-  
-}
-
-.ol-1 {
-  
+  @include m( large ) {
+    
+    @include e( item ) {
+      
+    }
+  }
 }
 
