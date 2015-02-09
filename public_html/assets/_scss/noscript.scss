@@ -1,0 +1,16 @@
+/*
+# JavaScriptが無効の時に読み込まれるCSS
+
+```
+<noscript>
+<link rel="stylesheet" href="/core/css/noscript.css">
+</noscript>
+```
+*/
+
+@import "compass",
+        "tool/font-size/ptp-14",
+        "tool/site-setting",
+        "tool/mixin",
+        "tool/function";
+

@@ -1,0 +1,67 @@
+/*
+# Utility / Margin
+*/
+
+@mixin u-mg( $i: 0, $unit:'px', $default: 0 ) {
+  .u-mg-t_#{$i}#{$unit} { margin-top: $default + $i !important}
+  .u-mg-r_#{$i}#{$unit} { margin-right: $default + $i !important}
+  .u-mg-b_#{$i}#{$unit} { margin-bottom: $default + $i !important}
+  .u-mg-l_#{$i}#{$unit} { margin-left: $default + $i !important}
+}
+
+
+/*
+## zero
+*/
+
+.u-mg_0 { margin: 0 !important}
+
+@include u-mg();
+
+
+/*
+## minus
+*/
+
+// -1000〜-105：5刻み
+@for $i from -100 through -21 {
+  $j: $i * 5;
+  @include u-mg( $j, 'px', 0px );
+}
+
+// -100〜-12：2刻み
+@for $i from -50 through -6 {
+  $j: $i * 2;
+  @include u-mg( $j, 'px', 0px );
+}
+
+// -10〜-1：1刻み
+@for $i from -10 through -1 {
+  @include u-mg( $i, 'px', 0px );
+}
+
+
+/*
+## plus
+*/
+
+// 1〜10：1刻み
+@for $i from 1 through 10 {
+  @include u-mg( $i, 'px', 0px );
+  @include u-mg( $i, 'em', 0em );
+  @include u-mg( $i, 'pc', 0% );
+}
+
+// 12〜100：2刻み
+@for $i from 6 through 50 {
+  $j: $i * 2;
+  @include u-mg( $j, 'px', 0px );
+  @include u-mg( $j, 'pc', 0% );
+}
+
+// 105〜1000：5刻み
+@for $i from 21 through 100 {
+  $j: $i * 5;
+  @include u-mg( $j, 'px', 0px );
+}
+

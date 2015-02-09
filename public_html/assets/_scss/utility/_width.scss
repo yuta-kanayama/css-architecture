@@ -1,0 +1,18 @@
+/*
+# Utility / Width
+*/
+
+.u-wi_0 { width: 0 !important}
+
+@for $i from 1 through 100 {
+  
+  .u-wi_#{$i}px { width: 0px + $i !important}
+  
+}
+
+@for $i from 51 through 500 {
+  $j: $i * 2;
+  
+  .u-wi_#{$j}px { width: 0px + $j !important}
+  
+}

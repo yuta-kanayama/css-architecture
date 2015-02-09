@@ -1,0 +1,43 @@
+/*
+# Utility / Padding
+*/
+
+@mixin u-pd( $i: 0, $unit:'px', $default: 0 ) {
+  .u-pd-t_#{$i}#{$unit} { padding-top: $default + $i !important}
+  .u-pd-r_#{$i}#{$unit} { padding-right: $default + $i !important}
+  .u-pd-b_#{$i}#{$unit} { padding-bottom: $default + $i !important}
+  .u-pd-l_#{$i}#{$unit} { padding-left: $default + $i !important}
+}
+
+
+/*
+## zero
+*/
+
+.u-pd_0 { padding: 0 !important}
+
+@include u-pd();
+
+
+/*
+## plus
+*/
+
+// 1〜10：1刻み
+@for $i from 1 through 10 {
+  @include u-pd( $i, 'px', 0px );
+  @include u-pd( $i, 'em', 0em );
+}
+
+// 12〜100：2刻み
+@for $i from 6 through 50 {
+  $j: $i * 2;
+  @include u-pd( $j, 'px', 0px );
+}
+
+// 105〜1000：5刻み
+@for $i from 21 through 100 {
+  $j: $i * 5;
+  @include u-pd( $j, 'px', 0px );
+}
+

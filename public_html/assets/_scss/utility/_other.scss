@@ -1,0 +1,36 @@
+/*
+# Utility / Other
+*/
+
+.u-clearfix {
+  @include legacy-pie-clearfix;
+}
+
+.u-pos-f { position: fixed !important}
+.u-pos-a { position: absolute !important}
+.u-pos-r { position: relative !important}
+
+
+/*
+## table
+*/
+
+.u-none { display: none !important}
+.u-block { display: block !important}
+.u-inline { display: inline !important}
+.u-inline-block { display: inline-block !important}
+.u-table { display: table !important}
+.u-table-cell { display: table-cell !important}
+
+
+/*
+## align
+*/
+
+.u-ta_l { text-align: left !important}
+.u-ta_c { text-align: center !important}
+.u-ta_r { text-align: right !important}
+
+.u-va_t { vertical-align: top !important}
+.u-va_m { vertical-align: middle !important}
+.u-va_b { vertical-align: bottom !important}
