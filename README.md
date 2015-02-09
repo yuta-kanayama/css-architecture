@@ -1,9 +1,25 @@
 # CSS設計 Sample
 
+Sass + Compass + SMACSS + BEM.
+
+
 [demo site](http://css-architecture.yuta-k.net/)
 
 
-## BEM + Sass( Mixin )
+
+## Categories
+
+* Base
+* Layout
+* Module
+* State
+* Theme
+* Tool
+* Utility
+
+
+
+## BEM + Sass ( Mixin )
 
 ```
 //Element
